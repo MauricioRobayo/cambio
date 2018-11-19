@@ -8,6 +8,9 @@
 
 Consulta la Tasa Representativa del Mercado en el servicio web de la Superintendencia Financiera de Colombia ![Bandera de Colombia](https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/22px-Flag_of_Colombia.svg.png).
 
+- Sin dependencias
+- Extra ligera
+
 ## Instalación
 
 ```shell
