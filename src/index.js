@@ -1,4 +1,4 @@
-const request = require("./__mocks__/request");
+const request = require("./request");
 
 /**
  * Convierte cadenas de texto que representan números o valores booleanos en números o booleanos nativos de JavaScript.
