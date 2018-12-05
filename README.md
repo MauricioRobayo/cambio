@@ -1,15 +1,18 @@
 # Cambio 💵
 
-[![npm version](https://badge.fury.io/js/cambio.svg)](https://badge.fury.io/js/cambio)
 [![install size](https://packagephobia.now.sh/badge?p=cambio)](https://packagephobia.now.sh/result?p=cambio)
+[![npm version](https://badge.fury.io/js/cambio.svg)](https://badge.fury.io/js/cambio)
 [![Build Status](https://travis-ci.com/archemiro/cambio.svg?branch=master)](https://travis-ci.com/archemiro/cambio)
 [![codecov](https://codecov.io/gh/archemiro/cambio/branch/master/graph/badge.svg)](https://codecov.io/gh/archemiro/cambio)
 [![Greenkeeper badge](https://badges.greenkeeper.io/archemiro/cambio.svg)](https://greenkeeper.io/)
 
-Consulta la Tasa Representativa del Mercado en el servicio web de la Superintendencia Financiera de Colombia ![Bandera de Colombia](https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/22px-Flag_of_Colombia.svg.png).
+Consulta la Tasa Representativa del Mercado en el servicio web de la Superintendencia Financiera de Colombia.
 
-- Sin dependencias
-- Extra ligera
+📦 Sin dependencias
+
+📦 Extra liviano
+
+![Cambio](https://media.giphy.com/media/bzE1WAm8BifiE/giphy.gif)
 
 ## Instalación
 
@@ -228,3 +231,5 @@ cambio("1978-10-10")
 ## Licencia
 
 [MIT](LICENSE)
+
+Hecho en ![Bandera de Colombia](https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/16px-Flag_of_Colombia.svg.png) con mucho ☕.
