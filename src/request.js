@@ -1,18 +1,17 @@
 const https = require("https");
-const url = require("url");
 
 // https://www.superfinanciera.gov.co/descargas?com=institucional&name=pubFile1016117&downloadname=20151228manualserviciowebtrm.pdf
 // https://www.youtube.com/watch?v=a-eB6nqwOh0&t=345s
 const WSDLUrl =
   "https://www.superfinanciera.gov.co/SuperfinancieraWebServiceTRM/TCRMServicesWebService/TCRMServicesWebService";
 
-const urlObject = url.parse(WSDLUrl);
+const urlObject = new URL(WSDLUrl);
 
 const options = {
   protocol: urlObject.protocol,
   host: urlObject.hostname,
   port: urlObject.port,
-  path: urlObject.path,
+  path: urlObject.pathname,
   method: "POST",
   headers: {
     "Content-Type": "text/xml"
