@@ -7,7 +7,7 @@
     "node": ">=8.10.0"
   },
   "scripts": {
-    "lint": "eslint src/**/*.js",
+    "lint": "eslint src",
     "test": "jest --coverage"
   },
   "husky": {
