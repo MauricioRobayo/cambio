@@ -4,12 +4,20 @@ cache:
   directories:
     - $HOME/.npm
 notifications:
-  email: false
+  email:
+    on_failure: always
 node_js:
   - "8.10"
 script:
   - npm run lint
   - npm test
   - npx codecov
-after_success:
-  - npx semantic-release
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: npx semantic-release
+  on:
+    branch: master
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/

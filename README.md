@@ -2,9 +2,9 @@
 
 [![install size](https://packagephobia.now.sh/badge?p=cambio)](https://packagephobia.now.sh/result?p=cambio)
 [![npm version](https://badge.fury.io/js/cambio.svg)](https://badge.fury.io/js/cambio)
-[![Build Status](https://travis-ci.com/archemiro/cambio.svg?branch=master)](https://travis-ci.com/archemiro/cambio)
-[![codecov](https://codecov.io/gh/archemiro/cambio/branch/master/graph/badge.svg)](https://codecov.io/gh/archemiro/cambio)
-[![Greenkeeper badge](https://badges.greenkeeper.io/archemiro/cambio.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.com/trmapi/cambio.svg?branch=master)](https://travis-ci.com/trmapi/cambio)
+[![codecov](https://codecov.io/gh/trmapi/cambio/branch/master/graph/badge.svg)](https://codecov.io/gh/trmapi/cambio)
+[![Greenkeeper badge](https://badges.greenkeeper.io/trmapi/cambio.svg)](https://greenkeeper.io/)
 
 Consulta la Tasa Representativa del Mercado en el servicio web de la Superintendencia Financiera de Colombia.
 
@@ -17,7 +17,7 @@ Consulta la Tasa Representativa del Mercado en el servicio web de la Superintend
 ## Instalación
 
 ```shell
-npm install cambio
+npm install @trmapi/cambio
 ```
 
 ## Uso
@@ -25,7 +25,7 @@ npm install cambio
 Requerir la función `cambio`:
 
 ```js
-const cambio = require("cambio");
+const cambio = require("@trmapi/cambio");
 ```
 
 La función `cambio` recibe los argumentos `date` y `options`, y devuelve una promesa.
