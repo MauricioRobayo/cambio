@@ -12,12 +12,8 @@ script:
   - npm run lint
   - npm test
   - npx codecov
-deploy:
-  skip_cleanup: true
-  provider: script
-  script: npx semantic-release
-  on:
-    branch: master
+after_success:
+  - npx semantic_release
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
