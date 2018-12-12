@@ -13,7 +13,7 @@ script:
   - npm test
   - npx codecov
 after_success:
-  - npx semantic_release
+  - npx semantic-release
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
