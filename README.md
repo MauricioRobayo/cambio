@@ -1,7 +1,7 @@
 # Cambio 💵
 
-[![install size](https://packagephobia.now.sh/badge?p=cambio)](https://packagephobia.now.sh/result?p=cambio)
-[![npm version](https://badge.fury.io/js/cambio.svg)](https://badge.fury.io/js/cambio)
+[![install size](https://packagephobia.now.sh/badge?p=@trmapi/cambio)](https://packagephobia.now.sh/result?p=@trmapi/cambio)
+[![npm version](https://badge.fury.io/js/%40trmapi%2Fcambio.svg)](https://www.npmjs.com/package/@trmapi/cambio)
 [![Build Status](https://travis-ci.com/trmapi/cambio.svg?branch=master)](https://travis-ci.com/trmapi/cambio)
 [![codecov](https://codecov.io/gh/trmapi/cambio/branch/master/graph/badge.svg)](https://codecov.io/gh/trmapi/cambio)
 [![Greenkeeper badge](https://badges.greenkeeper.io/trmapi/cambio.svg)](https://greenkeeper.io/)
