@@ -56,30 +56,21 @@ function parseTRM(trmXml, mode) {
  * @param {object} options Las opciones que se desean para la respuesta
  * @returns {Promise} El código de respuesta del servicio web de la Superintendencia Financiera de Colombia y la información obtenida.
  */
-module.exports = function cambio(date, { mode = "slim", status = true } = {}) {
-  return new Promise(async (resolve, reject) => {
-    try {
-      const { status: statusCode, trm } = await request(date);
-      if (status) {
-        resolve({
-          status: statusCode,
-          trm:
-            mode === "raw"
-              ? trm
-              : parseTRM(
-                  trm,
-                  statusCode !== 200 && mode === "slim" ? "full" : mode
-                )
-        });
-        return;
-      }
-      resolve(
+module.exports = async function cambio(
+  date,
+  { mode = "slim", status = true } = {}
+) {
+  const { status: statusCode, trm } = await request(date);
+  if (status) {
+    return {
+      status: statusCode,
+      trm:
         mode === "raw"
           ? trm
           : parseTRM(trm, statusCode !== 200 && mode === "slim" ? "full" : mode)
-      );
-    } catch (err) {
-      reject(err);
-    }
-  });
+    };
+  }
+  return mode === "raw"
+    ? trm
+    : parseTRM(trm, statusCode !== 200 && mode === "slim" ? "full" : mode);
 };
