@@ -5,6 +5,7 @@
 [![Build Status](https://travis-ci.com/trmapi/cambio.svg?branch=master)](https://travis-ci.com/trmapi/cambio)
 [![codecov](https://codecov.io/gh/trmapi/cambio/branch/master/graph/badge.svg)](https://codecov.io/gh/trmapi/cambio)
 [![Greenkeeper badge](https://badges.greenkeeper.io/trmapi/cambio.svg)](https://greenkeeper.io/)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftrmapi%2Fcambio.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftrmapi%2Fcambio?ref=badge_shield)
 
 Consulta la Tasa Representativa del Mercado en el servicio web de la Superintendencia Financiera de Colombia.
 
@@ -233,3 +234,6 @@ cambio("1978-10-10")
 [MIT](LICENSE)
 
 Hecho en ![Bandera de Colombia](https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/16px-Flag_of_Colombia.svg.png) con mucho ☕.
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftrmapi%2Fcambio.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftrmapi%2Fcambio?ref=badge_large)
