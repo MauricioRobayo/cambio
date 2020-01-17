@@ -230,6 +230,6 @@ cambio("1978-10-10")
 
 ## Licencia
 
-[MIT](LICENSE)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ftrmapi%2Fcambio.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Ftrmapi%2Fcambio?ref=badge_large)
 
-Hecho en ![Bandera de Colombia](https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/16px-Flag_of_Colombia.svg.png) con mucho ☕.
+💗![Bandera de Colombia](https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/16px-Flag_of_Colombia.svg.png)
