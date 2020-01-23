@@ -2,7 +2,7 @@ module.exports = date =>
   new Promise((resolve, reject) => {
     process.nextTick(() => {
       switch (date) {
-        case "2018-01-06":
+        case '2018-01-06':
           resolve({
             status: 200,
             trm: `<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
@@ -19,10 +19,10 @@ module.exports = date =>
                     </return>
                 </ns2:queryTCRMResponse>
             </soap:Body>
-        </soap:Envelope>`.replace(/\n| {2,}/g, "")
-          });
-          break;
-        case "2018-01-06:false":
+        </soap:Envelope>`.replace(/\n| {2,}/g, ''),
+          })
+          break
+        case '2018-01-06:false':
           resolve({
             status: 200,
             trm: `<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
@@ -39,10 +39,10 @@ module.exports = date =>
                     </return>
                 </ns2:queryTCRMResponse>
             </soap:Body>
-        </soap:Envelope>`.replace(/\n| {2,}/g, "")
-          });
-          break;
-        case "31-10-2018":
+        </soap:Envelope>`.replace(/\n| {2,}/g, ''),
+          })
+          break
+        case '31-10-2018':
           resolve({
             status: 500,
             trm: `<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
@@ -53,17 +53,17 @@ module.exports = date =>
                     <mocked>true</mocked>
                 </soap:Fault>
             </soap:Body>
-        </soap:Envelope>`.replace(/\n| {2,}/g, "")
-          });
-          break;
-        case "Unkown error":
+        </soap:Envelope>`.replace(/\n| {2,}/g, ''),
+          })
+          break
+        case 'Unkown error':
           resolve({
             status: 500,
-            trm: "Unkown error"
-          });
-          break;
+            trm: 'Unkown error',
+          })
+          break
         default:
-          reject(new Error("Unkown request"));
+          reject(new Error('Unkown request'))
       }
-    });
-  });
+    })
+  })

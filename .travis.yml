@@ -3,7 +3,7 @@ notifications:
   email:
     on_failure: always
 node_js:
-  - "10.16.0"
+  - '10.16.0'
 script:
   - npm run lint
   - npm test

@@ -25,7 +25,7 @@ npm install @trmapi/cambio
 Requerir la función `cambio`:
 
 ```js
-const cambio = require("@trmapi/cambio");
+const cambio = require('@trmapi/cambio')
 ```
 
 La función `cambio` recibe los argumentos `date` y `options`, y devuelve una promesa.
@@ -107,9 +107,9 @@ En este caso, `mode: slim` y `mode: full` devolverán la misma información.
 Para obtener la información de la TRM para el 6 de enero de 2018:
 
 ```js
-cambio("2018-01-06")
+cambio('2018-01-06')
   .then(data => console.log(data))
-  .catch(err => console.log(err));
+  .catch(err => console.log(err))
 ```
 
 ```js
@@ -126,9 +126,9 @@ cambio("2018-01-06")
 Si sólo se desea obtener la información de la TRM sin el código del estado de la respuesta:
 
 ```js
-cambio("2018-01-06", { status: false })
+cambio('2018-01-06', { status: false })
   .then(data => console.log(data))
-  .catch(err => console.log(err));
+  .catch(err => console.log(err))
 ```
 
 ```js
@@ -157,7 +157,7 @@ Para obtener la información de la TRM que aplica para la fecha actual:
 ```js
 cambio()
   .then(data => console.log(data))
-  .catch(err => console.log(err));
+  .catch(err => console.log(err))
 ```
 
 ```js
@@ -174,9 +174,9 @@ cambio()
 El argumento `fecha` de la función no es verificado sino que es pasado directamente como argumento en la solicitud SOAP que se hace al servicio web de la SFC, esto quiere decir que se puede pasar un argumento inválido y la función devolverá la respuesta del servicio web a dicho argumento:
 
 ```js
-cambio("31-10-2018")
+cambio('31-10-2018')
   .then(data => console.log(data))
-  .catch(err => console.log(err));
+  .catch(err => console.log(err))
 ```
 
 ```js
@@ -192,9 +192,9 @@ cambio("31-10-2018")
 Así mismo, se puede pasar una fecha mayor a la actual en cuyo caso se devolverá la información de la trm para la fecha más reciente disponible:
 
 ```js
-cambio("9999-10-10")
+cambio('9999-10-10')
   .then(data => console.log(data))
-  .catch(err => console.log(err));
+  .catch(err => console.log(err))
 ```
 
 ```js
@@ -211,9 +211,9 @@ cambio("9999-10-10")
 El servicio web de la SFC proporciona información de la TRM a partir de `2013-01-01`, por lo que si se solicita una fecha menor a esta fecha se devolverá el valor correspondiente a dicha fecha:
 
 ```js
-cambio("1978-10-10")
+cambio('1978-10-10')
   .then(data => console.log(data))
-  .catch(err => console.log(err));
+  .catch(err => console.log(err))
 ```
 
 ```js

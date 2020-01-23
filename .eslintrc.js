@@ -1,10 +1,10 @@
 module.exports = {
-  extends: ["airbnb-base", "prettier"],
+  extends: ['airbnb-base', 'prettier'],
   env: {
-    jest: true
+    jest: true,
   },
   rules: {
-    "require-jsdoc": "error",
-    "valid-jsdoc": "error"
-  }
-};
+    'require-jsdoc': 'error',
+    'valid-jsdoc': 'error',
+  },
+}

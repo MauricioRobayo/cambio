@@ -1,4 +1,4 @@
-const request = require("./request");
+const request = require('./request')
 
 /**
  * Convierte cadenas de texto que representan números o valores booleanos en números o booleanos nativos de JavaScript.
@@ -6,18 +6,18 @@ const request = require("./request");
  * @returns {any} Un número, booleano o la cadena de texto original
  */
 function nativeType(value) {
-  const nValue = Number(value);
+  const nValue = Number(value)
   if (!Number.isNaN(nValue)) {
-    return nValue;
+    return nValue
   }
-  const bValue = value.toLowerCase();
-  if (bValue === "true") {
-    return true;
+  const bValue = value.toLowerCase()
+  if (bValue === 'true') {
+    return true
   }
-  if (bValue === "false") {
-    return false;
+  if (bValue === 'false') {
+    return false
   }
-  return value;
+  return value
 }
 
 /**
@@ -27,27 +27,27 @@ function nativeType(value) {
  * @returns {object} Los elementos estrictamente necesarios del xml
  */
 function parseTRM(trmXml, mode) {
-  const trmRegEx = /<([^/][^>]*)>([^<]*)/g;
-  const trmJson = {};
-  let match = trmRegEx.exec(trmXml);
-  if (!match) throw new Error("Unexpected string in parseTRM");
+  const trmRegEx = /<([^/][^>]*)>([^<]*)/g
+  const trmJson = {}
+  let match = trmRegEx.exec(trmXml)
+  if (!match) throw new Error('Unexpected string in parseTRM')
   while (match) {
     if (match[2]) {
-      if (mode === "slim") {
+      if (mode === 'slim') {
         if (
-          match[1] === "validityFrom" ||
-          match[1] === "validityTo" ||
-          match[1] === "value" ||
-          match[1] === "message"
+          match[1] === 'validityFrom' ||
+          match[1] === 'validityTo' ||
+          match[1] === 'value' ||
+          match[1] === 'message'
         )
-          trmJson[match[1]] = nativeType(match[2]);
+          trmJson[match[1]] = nativeType(match[2])
       } else {
-        trmJson[match[1]] = nativeType(match[2]);
+        trmJson[match[1]] = nativeType(match[2])
       }
     }
-    match = trmRegEx.exec(trmXml);
+    match = trmRegEx.exec(trmXml)
   }
-  return trmJson;
+  return trmJson
 }
 
 /**
@@ -58,19 +58,22 @@ function parseTRM(trmXml, mode) {
  */
 module.exports = async function cambio(
   date,
-  { mode = "slim", status = true } = {}
+  { mode = 'slim', status = true } = {},
 ) {
-  const { status: statusCode, trm } = await request(date);
+  const { status: statusCode, trm } = await request(date)
   if (status) {
     return {
       status: statusCode,
       trm:
-        mode === "raw"
+        mode === 'raw'
           ? trm
-          : parseTRM(trm, statusCode !== 200 && mode === "slim" ? "full" : mode)
-    };
+          : parseTRM(
+              trm,
+              statusCode !== 200 && mode === 'slim' ? 'full' : mode,
+            ),
+    }
   }
-  return mode === "raw"
+  return mode === 'raw'
     ? trm
-    : parseTRM(trm, statusCode !== 200 && mode === "slim" ? "full" : mode);
-};
+    : parseTRM(trm, statusCode !== 200 && mode === 'slim' ? 'full' : mode)
+}

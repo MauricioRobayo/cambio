@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 
-const cambio = require("../src/index");
+const cambio = require('../src/index')
 
 /**
  * TRM actual
@@ -8,17 +8,15 @@ const cambio = require("../src/index");
  */
 async function example() {
   try {
-    const data = await cambio();
-    const { status, trm } = data;
+    const data = await cambio()
+    const { status, trm } = data
     if (status === 200) {
       console.log(
-        `La TRM vigente en este momento es ${trm.value} (válida de ${
-          trm.validityFrom
-        } a ${trm.validityTo})`
-      );
+        `La TRM vigente en este momento es ${trm.value} (válida de ${trm.validityFrom} a ${trm.validityTo})`,
+      )
     }
   } catch (err) {
-    console.log(err);
+    console.log(err)
   }
 }
-example();
+example()
