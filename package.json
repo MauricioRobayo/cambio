@@ -58,5 +58,10 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/trmapi/cambio.git"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "semi": false
   }
 }
