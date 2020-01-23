@@ -1,5 +1,6 @@
 const https = require('https')
 const { URL } = require('url')
+require('tls').DEFAULT_MIN_VERSION = 'TLSv1'
 
 // https://www.superfinanciera.gov.co/descargas?com=institucional&name=pubFile1016117&downloadname=20151228manualserviciowebtrm.pdf
 // https://www.youtube.com/watch?v=a-eB6nqwOh0&t=345s
