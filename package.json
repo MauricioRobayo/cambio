@@ -63,5 +63,10 @@
     "singleQuote": true,
     "trailingComma": "all",
     "semi": false
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }
