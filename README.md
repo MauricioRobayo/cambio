@@ -1,4 +1,4 @@
-**This package has been DEPRECATED in favor of The `trm-api` package which uses the oficial [Tasa Representativa del Mercado API](https://dev.socrata.com/foundry/www.datos.gov.co/32sa-8pi3) instead of SOAP service.**
+**This package has been DEPRECATED in favor of the [trm-api](https://github.com/mauriciorobayo/trm-api) package which uses the oficial [Tasa Representativa del Mercado API](https://dev.socrata.com/foundry/www.datos.gov.co/32sa-8pi3) instead of the Superintendencia Financiera de Colombia SOAP service.**
 
 
 # Cambio 💵
