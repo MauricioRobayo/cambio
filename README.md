@@ -1,3 +1,6 @@
+**This package has been DEPRECATED in favor of The `trm-api` package which uses the oficial [Tasa Representativa del Mercado API](https://dev.socrata.com/foundry/www.datos.gov.co/32sa-8pi3) instead of SOAP service.**
+
+
 # Cambio 💵
 
 [![install size](https://packagephobia.now.sh/badge?p=@trmapi/cambio)](https://packagephobia.now.sh/result?p=@trmapi/cambio)
